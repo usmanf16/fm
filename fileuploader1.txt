@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload List & Grid View</title>
+    <style>
+        /* Common style for list and grid items */
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        /* Style for the list view */
+        .list {
+            display: block;
+        }
+
+        /* Style for the grid view */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        /* Style for images in both views */
+        img {
+            max-width: 100%;
+            max-height: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>File Upload List & Grid View</h1>
+    <input type="file" id="fileInput" accept="image/*" multiple>
+    <button id="toggleButton">Toggle View</button>
+    <div id="fileContainer" class="list">
+      <!-- Files will be added here -->
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const toggleButton = document.getElementById('toggleButton');
+        const fileContainer = document.getElementById('fileContainer');
+        let isGridView = false;
+
+        // Add event listener for file input change
+        fileInput.addEventListener('change', handleFiles);
+
+        // Add event listener for toggle button click
+        toggleButton.addEventListener('click', toggleView);
+
+        function handleFiles() {
+            const files = fileInput.files;
+
+            // Clear the file container
+      
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const item = document.createElement(isGridView ? 'div' : 'div');
+                item.classList.add('item');
+
+                // Display image thumbnail (for image files)
+                if (file.type.startsWith('image/')) {
+                    const img = document.createElement('img');
+                    img.src = URL.createObjectURL(file);
+                    item.appendChild(img);
+                } else {
+                    // Display file name (for non-image files)
+                    item.textContent = file.name;
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                }
+
+                // Add the item to the file container
+                fileContainer.appendChild(item);
+
+
+
+                
+            }
+        }
+
+        function toggleView() {
+            isGridView = !isGridView;
+            fileContainer.className = isGridView ? 'grid' : 'list';
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,561 @@
+//* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial,
+Helvetica,
+sans-serif;
+}
+
+
+.box {
+
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.upload-area-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.uploadlabel {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  background: #18a7ff0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #18a7ff82;
+  cursor: pointer;
+}
+
+.uploadlabel span {
+  font-size: 70px;
+  color: #18a7ff;
+}
+
+.uploadlabel p {
+  color: #18a7ff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: cursive;
+}
+
+.uploaded {
+  margin: 30px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #a5a5a5;
+}
+
+.showfilebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 15px;
+  box-shadow: #0000000d 0px 0px 0px 1px,
+    #d1d5db3d 0px 0px 0px 1px inset;
+}
+
+.showfilebox .left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.filetype {
+  background: #18a7ff;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.left h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #292F42;
+  margin: 0;
+}
+
+.right span {
+  background: #18a7ff;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#nev {
+
+  border-radius: 12px;
+
+  margin-left: 0px;
+  margin-top: 20px;
+  padding: 10px 2rem;
+  height: 100px;
+  width: 1330px;
+  background-color: white;
+  box-shadow: 0 1.25em 2.18em rgba(225, 228, 232, 0.3);
+
+
+
+
+
+
+
+
+}
+
+.container {
+
+  width: 100px;
+  height: 1000px;
+
+
+}
+
+.box1 {
+
+  height: 1400px;
+  background-color: rgb(73, 93, 220);
+  width: 150px;
+  color: transparent;
+
+
+
+
+}
+
+.box1:hover {
+
+
+  width: 300px;
+  color: white;
+
+
+
+}
+
+.box1 {
+
+  transition: width 0.9s ease;
+
+
+
+
+}
+
+#mnu {
+
+  padding-top: 100px;
+
+
+
+
+
+}
+
+li {
+  list-style: none;
+  margin-left: 25px;
+
+  padding-top: 10px;
+
+
+
+
+
+}
+
+.fa-solid {
+
+  width: 40px;
+  color: white;
+
+
+
+}
+
+#mnu li {
+
+
+  padding-top: 30px;
+  border-radius: 8px;
+  font-size: x-large;
+
+
+
+
+
+
+
+}
+
+#mnu a i {
+
+
+  font-size: 2.5rem;
+
+
+
+}
+
+li {
+  font-weight: 200;
+  font-size: larger;
+
+}
+
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+/* Style for the list view */
+.list {
+  display: block;
+  height: 10px;
+}
+
+/* Style for the grid view */
+/*
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* Style for file details in both views */
+/*.file-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100px;
+}
+*/
+
+.file-input-label {
+  display: inline-block;
+  padding: 15px 15px;
+  /* Adjust padding to your preference */
+  background-color: #498dd7;
+  /* Button background color */
+  color: #fff;
+  /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0px;
+  width: 150px;
+  font-size: 13px;
+  margin-top: -40px;
+  margin-bottom: 0px;
+}
+
+/* Hide the file input */
+.file-input-label input[type="file"] {
+  display: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.wrapper {
+
+
+
+
+  box-shadow: 0 1.25em 2.18em rgba(203, 208, 214, 0.3);
+  width: 1430px;
+  margin-left: 315px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: #fffefe1d;
+  border: 0.5px solid #dfe2e5;
+  border-radius: 8px;
+  height: 920px;
+
+
+
+
+}
+
+
+
+
+.search-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 0.5px;
+  border-radius: 5px;
+  border-color: green;
+}
+
+/* Style for the search button */
+.search-button {
+  background-color: green;
+  color: rgb(70, 63, 63);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-color: #000;
+}
+
+/* Common style for list and grid items */
+.item {
+  border: 1px solid #ccc;
+  padding-right: 20px;
+  padding-right: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  /* Add rounded corners */
+  background-color: white;
+  column-gap: 2px;
+}
+
+.grid.item {
+
+  margin-left: 20px;
+  padding-right: 50px;
+  column-gap: 2px;
+
+
+}
+
+.item img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 25px;
+}
+
+.item .file-name {
+
+  margin-left: 70px;
+  margin-top: 20px;
+
+}
+
+.options {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.options-menu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style for the list view */
+.list {
+  display: block;
+}
+
+/* Style for the grid view */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* Style for file details in both views */
+.file-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align items to the left */
+}
+
+img {
+
+  max-width: 100%;
+  max-height: 100px;
+}
+
+/* Style for checkboxes */
+.checkbox-label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 0.5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-label.checked {
+  background-color: green;
+  border-color: green;
+}
+
+/* Style adjustments for list view */
+.list.item image {
+  background-color: white;
+  size: 300px;
+  margin-left: 150px;
+
+}
+
+.grid .item {
+
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  flex-direction: column;
+  /* Stack icon, name, size, and options in grid view */
+  text-align: center;
+  /* Center text in grid view */
+}
+
+.list .thumbnail {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 0px;
+}
+
+.list .file-details {
+  display: flex;
+  flex-direction: row;
+  /* Display icon and details side by side */
+  align-items: center;
+  /* Center items vertically */
+  text-align: center;
+}
+
+.list .file-details .thumbnail {
+  margin-bottom: 10px;
+  /* Add margin to the bottom of the thumbnail */
+  max-width: 50px;
+  /* Increase the maximum width of the thumbnail */
+  max-height: 50px;
+  /* Increase the maximum height of the thumbnail */
+}
+
+.list .file-size {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.list .options {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.list .file-details .file-name {
+  margin-left: 100px;
+
+}
+
+.list .file-details .file-size {
+  text-align: right;
+  /* Center the file size */
+}
+
+.grid .file-details .thumbnail {
+  margin-top: 200px;
+  /* Remove margin to center the thumbnail in grid view */
+  max-width: 50px;
+  /* Increase the maximum width of the thumbnail */
+  max-height: 50px;
+  /* Increase the maximum height of the thumbnail */
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* Add rounded corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.grid .file-details .file-name {
+  font-size: 320px;
+  /* Reduce font size for the name */
+  margin-top: 5px;
+  /* Add margin to separate name from the icon */
+  color: red;
+  font-style: italic;
+}
+
+.grid .file-details .file-size {
+  font-size: 5px;
+  /* Reduce font size for the size */
+  margin-top: 10px;
+  /* Add margin to separate size from the name */
+}
